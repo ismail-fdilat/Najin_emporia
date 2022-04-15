@@ -1,5 +1,6 @@
 {
   "name": "react-admin-dashboard",
+  "homepage": "https://dashboard.startinboxing.com",
   "version": "6.4.0",
   "private": true,
   "dependencies": {
