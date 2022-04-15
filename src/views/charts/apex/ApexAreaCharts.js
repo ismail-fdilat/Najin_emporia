@@ -90,16 +90,7 @@ const ApexAreaCharts = ({ direction }) => {
           </CardTitle>
           <CardSubtitle className='text-muted'>Commercial networks</CardSubtitle>
         </div>
-        <div className='d-flex align-items-center mt-md-0 mt-1'>
-          <Calendar size={17} />
-          <Flatpickr
-            options={{
-              mode: 'range',
-              defaultDate: ['2019-05-01', '2019-05-10']
-            }}
-            className='form-control flat-picker bg-transparent border-0 shadow-none'
-          />
-        </div>
+
       </CardHeader>
       <CardBody>
         <Chart options={options} series={series} type='area' height={400} />

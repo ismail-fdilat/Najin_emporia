@@ -3,7 +3,7 @@
 //Template config options
 const themeConfig = {
   app: {
-    appName: 'Admin Ismail',
+    appName: 'Admin Panel',
     appLogoImage: require('@src/assets/images/logo/i.svg').default
   },
   layout: {

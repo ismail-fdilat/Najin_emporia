@@ -8,17 +8,23 @@ export default [
     badge: 'light-warning',
     badgeText: '2',
     children: [
+      // {
+      //   id: 'analyticsDash',
+      //   title: 'Analytics',
+      //   icon: <Circle size={12} />,
+      //   navLink: '/dashboard/analytics'
+      // },
+      // {
+      //   id: 'eCommerceDash',
+      //   title: 'eCommerce',
+      //   icon: <Circle size={12} />,
+      //   navLink: '/dashboard/ecommerce'
+      // },
       {
-        id: 'analyticsDash',
-        title: 'Analytics',
+        id: 'listDash',
+        title: 'List Dashboard',
         icon: <Circle size={12} />,
-        navLink: '/dashboard/analytics'
-      },
-      {
-        id: 'eCommerceDash',
-        title: 'eCommerce',
-        icon: <Circle size={12} />,
-        navLink: '/dashboard/ecommerce'
+        navLink: '/dashboard/List'
       }
     ]
   }
