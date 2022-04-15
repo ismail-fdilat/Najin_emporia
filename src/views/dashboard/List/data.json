@@ -1,0 +1,82 @@
+[{
+        "total": "5137619",
+        "active": "4723322",
+        "not_active": "414297",
+        "unsubscribes": "381675",
+        "complaints": "23568",
+        "bounces": "9054",
+        "isp_name": "yahoo.com"
+    },
+    {
+        "total": "2241815",
+        "active": "1914840",
+        "not_active": "326975",
+        "unsubscribes": "184682",
+        "complaints": "6836",
+        "bounces": "135457",
+        "isp_name": "others"
+    },
+    {
+        "total": "1333206",
+        "active": "1206586",
+        "not_active": "126620",
+        "unsubscribes": "117957",
+        "complaints": "7239",
+        "bounces": "1424",
+        "isp_name": "aol.com"
+    },
+    {
+        "total": "603716",
+        "active": "418584",
+        "not_active": "185132",
+        "unsubscribes": "147454",
+        "complaints": "35415",
+        "bounces": "2263",
+        "isp_name": "comcast.net"
+    },
+    {
+        "total": "383760",
+        "active": "253382",
+        "not_active": "130378",
+        "unsubscribes": "50503",
+        "complaints": "2",
+        "bounces": "79873",
+        "isp_name": "icloud.com"
+    },
+    {
+        "total": "308010",
+        "active": "182002",
+        "not_active": "126008",
+        "unsubscribes": "76589",
+        "complaints": "3974",
+        "bounces": "45445",
+        "isp_name": "sbcglobal.net"
+    },
+    {
+        "total": "272740",
+        "active": "161668",
+        "not_active": "111072",
+        "unsubscribes": "70544",
+        "complaints": "2527",
+        "bounces": "38001",
+        "isp_name": "att.net"
+    },
+    {
+        "total": "194799",
+        "active": "114487",
+        "not_active": "80312",
+        "unsubscribes": "49980",
+        "complaints": "1931",
+        "bounces": "28401",
+        "isp_name": "bellsouth.net"
+    },
+    {
+        "total": "112926",
+        "active": "61511",
+        "not_active": "51415",
+        "unsubscribes": "29075",
+        "complaints": "0",
+        "bounces": "22340",
+        "isp_name": "me.com"
+    }
+]
