@@ -99,7 +99,7 @@
     "lint": "eslint src/**/*.js src/**/*.jsx",
     "lint:fix": "eslint src/**/*.js --fix",
     "build:dev": "env-cmd -f .env.dev react-app-rewired  build",
-    "build:prod": "env-cmd -f .env.prod react-app-rewired  build"
+    "build:prod": "env-cmd -f .env.production react-app-rewired  build"
   },
   "eslintConfig": {
     "extends": "react-app"

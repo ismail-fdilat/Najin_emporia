@@ -41,7 +41,7 @@ class ListDashboard extends React.Component {
   }
 
   async componentDidMount() {
-    console.log(`process.env.NODE_API_BASEURL => ${process.env.REACT_APP_APIURL}`)
+    console.log(`process.env.REACT_APP_APIURL => ${process.env.REACT_APP_APIURL}`)
     const growths = await this.fetchGrowths("sum_active_inactive")
     console.log(growths)
     const requestOptions = {
