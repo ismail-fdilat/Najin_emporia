@@ -13,7 +13,7 @@ import headers from "./headers.json"
 
 const config = {
   method: 'get',
-  url: 'http://localhost:3033/domain_volumes',
+  url: `${process.env.REACT_APP_APIURL}/domain_volumes`,
   headers
 }
 class ListDashboard extends React.Component {
@@ -31,7 +31,7 @@ class ListDashboard extends React.Component {
       redirect: 'follow'
     }
 
-    let query = await fetch(`http://localhost:3033/path?name=${type}`, requestOptions)
+    let query = await fetch(`${process.env.REACT_APP_APIURL}/path?name=${type}`, requestOptions)
 
     query = await query.json()
     console.log(query)
@@ -41,6 +41,7 @@ class ListDashboard extends React.Component {
   }
 
   async componentDidMount() {
+    console.log(`process.env.NODE_API_BASEURL => ${process.env.REACT_APP_APIURL}`)
     const growths = await this.fetchGrowths("sum_active_inactive")
     console.log(growths)
     const requestOptions = {

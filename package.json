@@ -29,6 +29,7 @@
     "cleave.js": "1.6.0",
     "draft-js": "0.11.7",
     "draftjs-to-html": "0.9.1",
+    "env-cmd": "^10.1.0",
     "file-saver": "2.0.2",
     "flatpickr": "4.6.3",
     "history": "5.0.0",
@@ -90,12 +91,15 @@
     "yup": "0.32.8"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "start:dev": "env-cmd -f .env.dev react-app-rewired start",
+    "start:prod": "env-cmd -f .env.prod react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "lint": "eslint src/**/*.js src/**/*.jsx",
-    "lint:fix": "eslint src/**/*.js --fix"
+    "lint:fix": "eslint src/**/*.js --fix",
+    "build:dev": "env-cmd -f .env.dev react-app-rewired  build",
+    "build:prod": "env-cmd -f .env.prod react-app-rewired  build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -116,6 +120,5 @@
     ">0.2%",
     "not dead",
     "not op_mini all"
-  ],
-  "homepage": "."
+  ]
 }
