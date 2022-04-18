@@ -48,7 +48,7 @@ class ListDashboard extends React.Component {
       method: 'GET',
       redirect: 'follow'
     }
-    const response = await fetch("http://localhost:3033/domain_volumes", requestOptions)
+    const response = await fetch(`${process.env.REACT_APP_APIURL}/domain_volumes`, requestOptions)
     const newData = await response.json()
     this.setState({ listData: newData.payload })
 
