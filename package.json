@@ -38,7 +38,7 @@
     "jquery": "3.5.1",
     "jsonwebtoken": "8.5.1",
     "leaflet": "1.6.0",
-    "moment": "2.29.1",
+    "moment": "^2.29.3",
     "nouislider": "14.6.2",
     "nouislider-react": "3.3.8",
     "postcss-rtl": "1.5.0",
@@ -87,7 +87,7 @@
     "webpack": "4.43.0",
     "wnumb": "1.2.0",
     "xlsx": "^0.18.3",
-    "yarn": "^1.21.1",
+    "yarn": "^1.22.18",
     "yup": "0.32.8"
   },
   "scripts": {

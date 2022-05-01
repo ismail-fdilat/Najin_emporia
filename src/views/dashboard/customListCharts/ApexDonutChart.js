@@ -1,25 +1,22 @@
 import Chart from 'react-apexcharts'
 import { Card, CardHeader, CardTitle, CardBody, CardSubtitle } from 'reactstrap'
 
-const ApexRadiarChart = ({ data }) => {
+const ApexRadiarChart = () => {
   const donutColors = {
     series1: '#ffe700',
     series2: '#00d4bd',
     series3: '#826bf8',
     series4: '#2b9bf4',
-    series5: '#FFA1A1',
-    series6: '#52e572',
-    series7: '#2c95a0',
-    series8: '#FF8C32'
+    series5: '#FFA1A1'
   }
   const options = {
     legend: {
       show: true,
       position: 'bottom'
     },
-    labels: data ? data.map((x) => x.isp_name).slice(0, 8) : [],
+    labels: ['Operational', 'Networking', 'Hiring', 'R&D'],
 
-    colors: [donutColors.series1, donutColors.series5, donutColors.series3, donutColors.series2, donutColors.series8, donutColors.series7, donutColors.series4, donutColors.series6],
+    colors: [donutColors.series1, donutColors.series5, donutColors.series3, donutColors.series2],
     dataLabels: {
       enabled: true,
       formatter(val, opt) {
@@ -38,16 +35,16 @@ const ApexRadiarChart = ({ data }) => {
             value: {
               fontSize: '1rem',
               fontFamily: 'Montserrat',
-              formatter(val, opt) {
-                return `${Math.round(parseFloat(val) * 100)}%`
+              formatter(val) {
+                return `${parseInt(val)}%`
               }
             },
             total: {
               show: true,
               fontSize: '1.5rem',
-              label: 'Domains',
+              label: 'Operational',
               formatter(w) {
-                return '100%'
+                return '31%'
               }
             }
           }
@@ -59,7 +56,7 @@ const ApexRadiarChart = ({ data }) => {
         breakpoint: 992,
         options: {
           chart: {
-            height: 600
+            height: 380
           },
           legend: {
             position: 'bottom'
@@ -70,7 +67,7 @@ const ApexRadiarChart = ({ data }) => {
         breakpoint: 576,
         options: {
           chart: {
-            height: 400
+            height: 320
           },
           plotOptions: {
             pie: {
@@ -94,18 +91,20 @@ const ApexRadiarChart = ({ data }) => {
       }
     ]
   }
-  let total = data ? data.map((x) => parseInt(x.total)) : 0
-  total = total ? total.reduce((a, b) => a + b, 0) : 0
-  const series = data ? data.map((x) => parseInt(x.total) / total).slice(0, 8) : [87]
-  console.log(series)
+
+  const series = [85, 16, 50, 50]
+
   return (
-    <Card>
+    <Card style={{
+      backgroundColor: '#F8F8F8',
+      borderColor: '#F8F8F8'
+    }}>
       <CardHeader>
         <div>
           <CardTitle className='mb-75' tag='h4'>
-            Distribution per domain
+            Expense Ratio
           </CardTitle>
-          <CardSubtitle className='text-muted'>(top 8)</CardSubtitle>
+          <CardSubtitle className='text-muted'>Spending on various categories</CardSubtitle>
         </div>
       </CardHeader>
       <CardBody>

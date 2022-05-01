@@ -22,7 +22,7 @@ const CustomNavbar = () => {
 }
 const VerticalLayout = props => {
     return (
-        <Layout navbar={<CustomNavbar />} {...props}>
+        <Layout className="pt-5 bg-white" navbar={<CustomNavbar />} {...props}>
             {props.children}
         </Layout>
     )
